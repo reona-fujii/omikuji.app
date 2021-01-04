@@ -1,6 +1,7 @@
 package jp.wings.nikkeibp.omikuji
 
 import android.os.Bundle
+import android.view.Menu
 import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
@@ -36,6 +37,11 @@ class OmikujiActivity : AppCompatActivity() {
         omikujiShelf[4].fortuneID = R.string.contents5
         omikujiShelf[5].fortuneID = R.string.contents6
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
+    }
+
     fun onButtonClick(v:View) {
         omikujiBox.shake()
     }
