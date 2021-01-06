@@ -2,9 +2,11 @@ package jp.wings.nikkeibp.omikuji
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.fortune.*
 import kotlinx.android.synthetic.main.omikuji.*
@@ -39,7 +41,14 @@ class OmikujiActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val toast = Toast.makeText(this, item?.title, Toast.LENGTH_LONG)
+        toast.show()
+        return super.onOptionsItemSelected(item)
     }
 
     fun onButtonClick(v:View) {
