@@ -18,7 +18,7 @@ class OmikujiActivity : AppCompatActivity() {
     val omikujiShelf = Array<OmikujiParts>(20)
     { OmikujiParts(R.drawable.result2, R.string.contents1) }
 
-    //おみくじ番号の保管
+    //おみくじの保管
     var omikujiNumber = -1
 
 
