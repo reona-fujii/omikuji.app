@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "jp.wings.nikkeibp.omikuji"
+        applicationId "application.omikuji"
         minSdkVersion 16
         targetSdkVersion 30
 
